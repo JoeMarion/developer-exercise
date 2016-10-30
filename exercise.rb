@@ -14,14 +14,13 @@ class Exercise
 
   # Return the sum of all even numbers in the Fibonacci sequence, up to
   # the "nth" term in the sequence
-  # eg. the Fibonacci sequence up to 6 terms is (1, 1, 2, 3, 5, 8),
-  # and the sum of its even numbers is (2 + 8) = 10
   def self.even_fibonacci(nth)
-    # TODO: Implement this method
-    fib_array = []
+    fib_array = [] # Create Array to store Fibonacci numbers
+    # Store the Sequenced number into fib_array up to the nth number
     (nth).times do |num|
       fib_array << fibonacci(num + 1)
     end
+    # Add up the values of only even numbers
     fib_array.inject(0) do |i, val|
       val % 2 == 0 ? i + val : i
     end
