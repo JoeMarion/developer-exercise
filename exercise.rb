@@ -1,3 +1,4 @@
+# Refactored Code ------------------------------------------------------------
 class Exercise
 
   # Takes a string and replaces any words more than 4 chars and replaces word
@@ -37,6 +38,7 @@ end
 
 __END__
 
+# Original Code --------------------------------------------------------------
 
 class Exercise
 
